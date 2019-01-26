@@ -295,7 +295,7 @@ function soundclick(element){
   playing = true;
   }
   //image load
-  if(playing||nameoflastelement==0 && animpicture){
+  if(playing||nameoflastelement==0){
     var picture = new Image();
     picture.src = element.image;
     picture.onload = function(){
