@@ -273,7 +273,6 @@ var nameoflastelement = 0;
 var replayindicator = false; //if same element is clicked multiple times, play & pause in turns
 
 function soundclick(element){
-  animpicture = true;
   if (playing && element.name != nameoflastelement){ //if there is an audio playing already, this stops it and resets its colour
     audio.pause();
     brush.clearRect(0, 0, canvas.width, canvas.height);
