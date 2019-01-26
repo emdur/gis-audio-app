@@ -20,7 +20,7 @@ var elemLeft = canvas.offsetLeft,
     rectangles = [];
 
 // event listeners
-canvas.addEventListener('mousedown', function(event) {
+canvas.addEventListener('mousedown' || 'touchstart', function(event) {
     var x = event.pageX - elemLeft,
         y = event.pageY - elemTop;
     // collision detection between clicked offset and element
@@ -31,7 +31,7 @@ canvas.addEventListener('mousedown', function(event) {
         }
     });
 }, false);
-canvas.addEventListener('mouseup', function(event) {
+canvas.addEventListener('mouseup' || 'touchend', function(event) {
     var x = event.pageX - elemLeft,
         y = event.pageY - elemTop;
     // collision detection between clicked offset and element
@@ -42,7 +42,7 @@ canvas.addEventListener('mouseup', function(event) {
         }
     });
 }, false);
-canvas.addEventListener('mousemove', function(event) {
+canvas.addEventListener('mousemove' || 'touchmove', function(event) {
     var x = event.pageX - elemLeft,
         y = event.pageY - elemTop;
     // collision detection between clicked offset and element
