@@ -53,7 +53,7 @@ canvas.addEventListener('mousemove', function(event) {
         }
     });
 }, false);
-canvas.addEventListener('dblclick', function(event) {
+canvas.addEventListener('dblclick', function(event) { //was originally meant for 'click' event, before I added the other mouse events
     var x = event.pageX - elemLeft,
         y = event.pageY - elemTop;
     // collision detection between clicked offset and element
