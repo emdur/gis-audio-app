@@ -1,7 +1,32 @@
-﻿<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype html>
+<html lang="de">
+
+<head>
+  <title>GIS SoundProjekt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type = "text/css">
+    /*stretch canvas across inner window:*/
+    canvas {
+    /*  display: block;*/
+			  outline: none;
+			  border: 0;
+    }
+    canvas:focus, canvas:active {
+			  outline: none;
+			  border: 0;
+			  ie-dummy: expression(this.hideFocus=true);
+			  -moz-outline-style: none;
+			}
+    body{
+      margin: 0;
+    }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+  <canvas id="canvas"></canvas>
+  <script src="SoundProjektFinal.js"></script>
 </body>
+
 </html>
